@@ -1,0 +1,9 @@
+// language code from http://www.ietf.org/rfc/rfc3066.txt
+// see: https://en.wikipedia.org/wiki/ISO_3166-1
+<xml:lang> : Attribute
+  type=<xsd:string>
+
+// significance of space
+// default | preserve
+<xml:space> : Attribute
+  type=<xsd:NMTOKEN>

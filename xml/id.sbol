@@ -1,0 +1,5 @@
+// xml id
+// see: https://www.w3.org/TR/xml-id/
+// type is ID. Processors should normalize it to NCName
+<xml:id> : attribute
+  type=ID

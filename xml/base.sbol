@@ -1,0 +1,5 @@
+// xml base
+// see: https://www.w3.org/TR/xmlbase/
+// see: https://www.w3.org/TR/leiri/
+<xml:base> : attribute
+  type=LEIRI
