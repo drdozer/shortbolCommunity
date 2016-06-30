@@ -1,5 +1,6 @@
 @import <prov.sbol>
 
 @prefix sbol <http://sbols.org/v2#>
+@defaultPrefix sbol
 @import <sbol/components.sbol>
 @import <sbol/genomic.sbol>
