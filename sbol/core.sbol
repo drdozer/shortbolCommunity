@@ -1,7 +1,7 @@
-sbol:Identified : owl:Class
-  sbol:persistentIdentity : owl:restriction
+Identified : owl:Class
+  persistentIdentity : owl:restriction
     owl:subPropertyOf = prov:wasRevisionOf
     owl:minCardinality = 0
     owl:maxCardinality = 1
     owl:dataAllValuesFrom = prov:Entity
-  sbol:displayId
+  displayId
