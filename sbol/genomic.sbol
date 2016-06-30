@@ -3,39 +3,36 @@
 
 #Common sequence annotations
 
-DNASequence(x) => Sequence
-   encoding = <SBOL:IUPACDNA>
+DnaSequence(x) => Sequence
+   encoding = IUPACDNA
    elements = x
-
-DNASequence => Sequence
-   encoding = <IUPAC:DNA>
 
 # DNA/RNA/Protein
 
 DnaComponent => ComponentDefinition
-   type = <SBOL:DNA>
+   type = DNA
 
 RnaComponent => ComponentDefinition
-   type = <SBOL:RNA>
+   type = RNA
 
 ProteinComponent => ComponentDefinition
-  type = <SBOL:Protein>
+  type = Protein
 
 # Common DNA components
 
 Promoter => DnaComponent
-  role = <SBOL:Promoter>
+  role = Promoter
 
 RBS => DnaComponent
-  role = <SBOL:RBS>
+  role = RBS
 
 CDS => DnaComponent
-  role = <SBOL:CDS>
+  role = CDS
 
 Terminator => DnaComponent
-  role = <SBOL:Terminator>
+  role = Terminator
 
 # Common RNA components
 
 CDS_RNA => RnaComponent
-  role = <SBOL:CDS>
+  role = CDS
