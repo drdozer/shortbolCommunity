@@ -3,9 +3,24 @@
 
 #Common sequence annotations
 
+iupac:DNA = <http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html>
+iupac:RNA = <http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html>
+iupac:Protein = <http://www.chem.qmul.ac.uk/iupac/AminoAcid/>
+opensmiles:SMILES = <http://www.opensmiles.org/opensmiles.html>
+
 DnaSequence(x) => Sequence
-   encoding = IUPACDNA
-   elements = x
+  encoding = iupac:DNA
+  elements = x
+
+RnaSequence(x) => Sequence
+  encoding = iupac:DNA
+  elements = x
+
+ProteinSequence(x) => Sequence
+  encoding = iupac:Protein
+
+ChemicalStructure(x) => Sequence
+  encoding = opensmiles:SMILES
 
 # DNA/RNA/Protein
 
