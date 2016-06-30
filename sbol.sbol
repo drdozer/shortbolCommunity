@@ -1,0 +1,5 @@
+@import <prov.sbol>
+
+@prefix sbol <http://sbols.org/v2#>
+@import <sbol/components.sbol>
+@import <sbol/genomic.sbol>
