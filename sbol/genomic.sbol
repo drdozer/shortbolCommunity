@@ -8,6 +8,15 @@ iupac:RNA = <http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html>
 iupac:Protein = <http://www.chem.qmul.ac.uk/iupac/AminoAcid/>
 opensmiles:SMILES = <http://www.opensmiles.org/opensmiles.html>
 
+@prefix biopax <http://www.biopax.org/release/biopax-level3.owl#>
+
+DNA = biopax:DnaRegion
+RNA = biopax:RnaRegion
+Protein = biopax:Protein
+SmallMolecule = biopax:SmallMolecule
+Complex = biopax:Complex
+
+
 DnaSequence(x) => Sequence
   encoding = iupac:DNA
   elements = x
@@ -32,6 +41,12 @@ RnaComponent => ComponentDefinition
 
 ProteinComponent => ComponentDefinition
   type = Protein
+
+SmallMoleculeComponent => ComponentDefinition
+  type = SmallMolecule
+
+ComplexComponent => ComponentDefinition
+  type = Complex
 
 # Common DNA components
 
