@@ -53,7 +53,7 @@ ComponentDefinition : owl:Class
 # Enumeration
 ComponentInstanceAccess : owl:Class
   dc:description = "Access flags for ComponentInstance."
-  owl:oneOf(public private)
+  owl:oneOf : rdf:list(public, private)
 
 ComponentInstance : owl:Class
   dc:description = "An astract class representing a use or occurrence of a ComponentDefinition within a larger design."
@@ -62,7 +62,7 @@ ComponentInstance : owl:Class
     owl:exactCardinality = 1
     owl:allValuesFrom = ComponentDefinition
   mapsTo : owl:propertyRestriction
-    owl:allValuesFrom MapsTo
+    owl:allValuesFrom = MapsTo
   access : owl:propertyRestriction
     owl:exactCardinality = 1
     owl:allValuesFrom = ComponentInstanceAccess
@@ -73,7 +73,7 @@ Component : owl:Class
 
 MapsToRefinement : owl:Class
   dc:description = "Refinement flags for MapsTo."
-  owl:oneOf(useRemote useLocal verifyIdentical merge)
+  owl:oneOf : rdf:list(useRemote, useLocal, verifyIdentical, merge)
 
 MapsTo : owl:Class
   dc:description = "Define equivalence across compositional boundaries."
@@ -99,10 +99,10 @@ SequenceAnnotation : owl:Class
   component : owl:propertyRestriction
     owl:minCardinality = 0
     owl:maxCardinality = 1
-    owl:allValuesFrom Component
+    owl:allValuesFrom = Component
 
 LocationOrientation : owl:Class
-  owl:oneOf(inline reverseComplement)
+  owl:oneOf : rdf:list(inline, reverseComplement)
 
 Location : owl:Class
   dc:description = "A spatial location within a ComponentDefinition, usually by reference to the coordinate system defined by its associated Sequence."
