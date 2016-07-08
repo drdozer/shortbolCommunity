@@ -8,6 +8,10 @@ iupac:RNA = <http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html>
 iupac:Protein = <http://www.chem.qmul.ac.uk/iupac/AminoAcid/>
 opensmiles:SMILES = <http://www.opensmiles.org/opensmiles.html>
 
+iupac:DNA : SequenceEncoding
+iupac:RNA : SequenceEncoding
+iupac:Protein : SequenceEncoding
+opensmiles:SMILES : SequenceEncoding
 
 # ComponentDefinition type
 @prefix biopax <http://www.biopax.org/release/biopax-level3.owl#>
@@ -18,6 +22,8 @@ Protein = biopax:Protein
 SmallMolecule = biopax:SmallMolecule
 Complex = biopax:Complex
 
+biopax:PhysicalEntity : owl:Class
+  owl:subClassOf = ComponentDefinitionType
 
 # ComponentDefinition role
 
@@ -30,6 +36,14 @@ Operator = <http://identifiers.org/so/SO:0000057>
 EngineeredGene = <http://identifiers.org/so/SO:0000280>
 mRNA = <http://identifiers.org/so/SO:0000234>
 Effector = <http://identifiers.org/chebi/CHEBI:35224>
+
+<http://identifiers.org/so/SO:0000001> : owl:Class
+  dc:description = "A sequence_feature with an extent greater than zero."
+  owl:subClassOf = ComponentDefinitionRole
+
+<http://identifiers.org/chebi/CHEBI:52206> : owl:Class
+  dc:description = "A biological role played by the molecular entity or part thereof within a biochemical context."
+  owl:subClassOf = ComponentDefinitionRole
 
 
 # Templates
