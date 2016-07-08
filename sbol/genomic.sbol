@@ -1,13 +1,15 @@
 
 ############### Generic Components ##################
 
-#Common sequence annotations
+# Sequence encodings
 
 iupac:DNA = <http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html>
 iupac:RNA = <http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html>
 iupac:Protein = <http://www.chem.qmul.ac.uk/iupac/AminoAcid/>
 opensmiles:SMILES = <http://www.opensmiles.org/opensmiles.html>
 
+
+# ComponentDefinition type
 @prefix biopax <http://www.biopax.org/release/biopax-level3.owl#>
 
 DNA = biopax:DnaRegion
@@ -16,6 +18,21 @@ Protein = biopax:Protein
 SmallMolecule = biopax:SmallMolecule
 Complex = biopax:Complex
 
+
+# ComponentDefinition role
+
+Promoter = <http://identifiers.org/so/SO:0000167>
+RBS = <http://identifiers.org/so/SO:0000139>
+CDS = <http://identifiers.org/so/SO:0000316>
+Terminator = <http://identifiers.org/so/SO:0000141>
+Gene = <http://identifiers.org/so/SO:0000704>
+Operator = <http://identifiers.org/so/SO:0000057>
+EngineeredGene = <http://identifiers.org/so/SO:0000280>
+mRNA = <http://identifiers.org/so/SO:0000234>
+Effector = <http://identifiers.org/chebi/CHEBI:35224>
+
+
+# Templates
 
 DnaSequence(x) => Sequence
   encoding = iupac:DNA
