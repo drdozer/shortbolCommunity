@@ -14,7 +14,7 @@ Sequence : owl:Class
   owl:subClassOf = TopLevel
   elements : owl:propertyRestriction
     owl:exactCardinality = 1
-    owl:allValuesFrom = xs:string
+    owl:allValuesFrom = xsd:string
   encoding : owl:propertyRestriction
     owl:exactCardinality = 1
     owl:allValuesFrom = SequenceEncoding
@@ -120,17 +120,17 @@ Range : owl:Class
   owl:subClassOf = Location
   start : owl:propertyRestriction
     owl:exactCardinality = 1
-    owl:allValuesFrom = xs:integer
+    owl:allValuesFrom = xsd:integer
   end : owl:propertyRestriction
     owl:exactCardinality = 1
-    owl:allValuesFrom = xs:integer
+    owl:allValuesFrom = xsd:integer
 
 Cut : owl:Class
   dc:description = "A region between two discrete positions."
   owl:subClassOf = Location
   at : owl:propertyRestriction
     owl:exactCardinality = 1
-    owl:allValuesFrom = xs:integer
+    owl:allValuesFrom = xsd:integer
 
 GenericLocation : owl:Class
   dc:description = "A user-defined class of location, to be interpreted by user-defined annotations."

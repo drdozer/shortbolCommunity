@@ -12,11 +12,11 @@ Identified : owl:Class
     owl:subPropertyOf = dc:identifier
     owl:minCardinality = 0
     owl:maxCardinality = 1
-    owl:allValuesFrom = xs:string
+    owl:allValuesFrom = xsd:string
   version : owl:restriction
     owl:minCardinality = 0
     owl:maxCardinality = 1
-    owl:allValuesFrom = xs:string
+    owl:allValuesFrom = xsd:string
   prov:wasDerivedFrom : owl:restriction
     owl:minCardinality = 0
     owl:maxCardinality = 1
@@ -24,11 +24,11 @@ Identified : owl:Class
   name : owl:restriction
     owl:minCardinality = 0
     owl:maxCardinality = 1
-    owl:allValuesFrom = xs:string
+    owl:allValuesFrom = xsd:string
   dc:description : owl:restriction
     owl:minCardinality = 0
     owl:maxCardinality = 1
-    owl:allValuesFrom = xs:string
+    owl:allValuesFrom = xsd:string
 
 TopLevel : owl:Class
   dc:description = "The type of all entities that can be at the top of an SBOL file."

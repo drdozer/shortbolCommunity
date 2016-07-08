@@ -2,6 +2,8 @@
 
 @import <prov>
 @import <dc>
+@import <owl>
+@import <xsd>
 
 @prefix sbol <http://sbols.org/v2#>
 @defaultPrefix sbol
