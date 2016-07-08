@@ -4,8 +4,7 @@ SequenceEncoding : owl:Class
   dc:description = "A class to flag that an entity is a value that can be used for sequence encoding."
 
 Sequence : owl:Class
-  dc:description =
-    {
+  dc:description = {
     A primary structure, represented as elements drawn from an encoding.
 
     For example, the elements of a DNA sequence specify the nucleotides as a string of A,G,C,Ts using the
@@ -20,16 +19,14 @@ Sequence : owl:Class
     owl:allValuesFrom = SequenceEncoding
 
 ComponentDefinitionType : owl:Class
-  dc:description =
-    {
+  dc:description = {
     A term that can be used as a ComponentDefinition type.
 
     These will typically be drawn from the BioPax PhysicalEntity tree, although other terminologies may be used.
     }
 
 ComponentDefinitionRole : owl:Class
-  dc:description =
-    {
+  dc:description = {
     A term that can be used as a ComponentDefinition role.
 
     These will be typically drawn from the sequence feature branch of Sequence Ontology, although other terminologies
