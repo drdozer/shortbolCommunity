@@ -1,7 +1,31 @@
+identity = rdf:about
+name = dc:title
+
 Identified : owl:Class
   persistentIdentity : owl:restriction
     owl:subPropertyOf = prov:wasRevisionOf
     owl:minCardinality = 0
     owl:maxCardinality = 1
-    owl:dataAllValuesFrom = prov:Entity
-  displayId
+    owl:allValuesFrom = prov:Entity
+  displayId : owl:restriction
+    owl:subPropertyOf = dc:identifier
+    owl:minCardinality = 0
+    owl:maxCardinality = 1
+    owl:allValuesFrom = xs:string
+  version : owl:restriction
+    owl:minCardinality = 0
+    owl:maxCardinality = 1
+    owl:allValuesFrom = xs:string
+  prov:wasDerivedFrom : owl:restriction
+    owl:minCardinality = 0
+    owl:maxCardinality = 1
+    owl:allValuesFrom = prov:Entity
+  name : owl:restriction
+    owl:minCardinality = 0
+    owl:maxCardinality = 1
+    owl:allValuesFrom = xs:string
+  dc:description : owl:restriction
+    owl:minCardinality = 0
+    owl:maxCardinality = 1
+    owl:allValuesFrom = xs:string
+
