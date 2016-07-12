@@ -1,5 +1,6 @@
 # SBOL 2 Data Model
 
+@import <rdf>
 @import <prov>
 @import <dc>
 @import <owl>
