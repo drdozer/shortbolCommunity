@@ -58,6 +58,7 @@ RnaSequence(x) => Sequence
 
 ProteinSequence(x) => Sequence
   encoding = iupac:Protein
+  elements = x
 
 ChemicalStructure(x) => Sequence
   encoding = opensmiles:SMILES
