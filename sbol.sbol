@@ -11,3 +11,4 @@
 @import <sbol/core>
 @import <sbol/component>
 @import <sbol/genomic>
+@import <sbol/module>

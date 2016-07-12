@@ -34,3 +34,8 @@ TopLevel : owl:Class
   dc:description = "The type of all entities that can be at the top of an SBOL file."
   owl:subClassOf = Identified
 
+Collection : owl:Class
+  dc:description = "A group of TOpLevel objects that have something in common."
+  owl:subClassOf = TopLevel
+  member : owl:propertyRestriction
+    owl:allValuesFrom = TopLevel
