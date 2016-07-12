@@ -93,6 +93,9 @@ CDS => DnaComponent
 Terminator => DnaComponent
   role = Terminator
 
+Operator => DnaComponent
+  role = Operator
+
 # Common RNA components
 
 CDS_RNA => RnaComponent
