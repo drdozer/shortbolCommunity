@@ -14,8 +14,6 @@ iupac:Protein : SequenceEncoding
 opensmiles:SMILES : SequenceEncoding
 
 # ComponentDefinition type
-@prefix biopax <http://www.biopax.org/release/biopax-level3.owl#>
-
 DNA = biopax:DnaRegion
 RNA = biopax:RnaRegion
 Protein = biopax:Protein
@@ -27,15 +25,15 @@ biopax:PhysicalEntity : owl:Class
 
 # ComponentDefinition role
 
-Promoter = <http://identifiers.org/so/SO:0000167>
-RBS = <http://identifiers.org/so/SO:0000139>
-CDS = <http://identifiers.org/so/SO:0000316>
-Terminator = <http://identifiers.org/so/SO:0000141>
-Gene = <http://identifiers.org/so/SO:0000704>
-Operator = <http://identifiers.org/so/SO:0000057>
-EngineeredGene = <http://identifiers.org/so/SO:0000280>
-mRNA = <http://identifiers.org/so/SO:0000234>
-Effector = <http://identifiers.org/chebi/CHEBI:35224>
+Promoter = so:0000167
+RBS = so:0000139
+CDS = so:0000316
+Terminator = so:0000141
+Gene = so:0000704
+Operator = so:0000057
+EngineeredGene = so:0000280
+mRNA = so:0000234
+Effector = chebi:35224
 
 <http://identifiers.org/so/SO:0000001> : owl:Class
   dc:description = "A sequence_feature with an extent greater than zero."
