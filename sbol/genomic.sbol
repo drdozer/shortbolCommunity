@@ -25,21 +25,21 @@ biopax:PhysicalEntity : owl:Class
 
 # ComponentDefinition role
 
-Promoter = so:0000167
-RBS = so:0000139
-CDS = so:0000316
-Terminator = so:0000141
-Gene = so:0000704
-Operator = so:0000057
-EngineeredGene = so:0000280
-mRNA = so:0000234
-Effector = chebi:35224
+Promoter = so:_0000167
+RBS = so:_0000139
+CDS = so:_0000316
+Terminator = so:_0000141
+Gene = so:_0000704
+Operator = so:_0000057
+EngineeredGene = so:_0000280
+mRNA = so:_0000234
+Effector = chebi:_35224
 
-<http://identifiers.org/so/SO:0000001> : owl:Class
+so:_0000001 : owl:Class
   dc:description = "A sequence_feature with an extent greater than zero."
   owl:subClassOf = ComponentDefinitionRole
 
-<http://identifiers.org/chebi/CHEBI:52206> : owl:Class
+chebi:_52206 : owl:Class
   dc:description = "A biological role played by the molecular entity or part thereof within a biochemical context."
   owl:subClassOf = ComponentDefinitionRole
 

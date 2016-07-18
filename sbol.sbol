@@ -9,6 +9,8 @@
 @import <chebi>
 @import <so>
 @import <biopax>
+@import <edam>
+@import <sbo>
 
 @prefix sbol <http://sbols.org/v2#>
 @defaultPrefix sbol

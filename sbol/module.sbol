@@ -3,13 +3,13 @@
 
 ModelLanguage : owl:Class
 
-<http://edamontology.org/format_2013> : owl:Class
+edam:_2013 : owl:Class
   owl:subClassOf = ModelLanguage
 
 
 ModelFramework : owl:Class
 
-<http://identifiers.org/biomodels.sbo/SBO:0000004> : owl:Class
+sbo:_0000004 : owl:Class
   owl:subClassOf = ModelFramework
 
 
@@ -82,7 +82,7 @@ Interaction : owl:Class
 
 ParticipationRole : owl:Class
 
-<http://identifiers.org/biomodels.sbo/SBO:0000019> : owl:Class
+sbo:_0000019 : owl:Class
   owl:subClassOf = ParticipationRole
 
 Participation : owl:Class
