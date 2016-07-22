@@ -1,0 +1,18 @@
+# Interaction type values
+
+i:Inhibition          = <http://identifiers.org/biomodels.sbo/SBO:0000169>
+i:Stimulation         = <http://identifiers.org/biomodels.sbo/SBO:0000170>
+i:BiochemicalReaction = <http://identifiers.org/biomodels.sbo/SBO:0000176>
+i:NonCovalentBinding  = <http://identifiers.org/biomodels.sbo/SBO:0000177>
+i:Degredation         = <http://identifiers.org/biomodels.sbo/SBO:0000179>
+i:GeneticProduction   = <http://identifiers.org/biomodels.sbo/SBO:0000589>
+
+
+# Participation role values
+
+p:Inhibitor  = http://identifiers.org/biomodels.sbo/SBO:0000020
+p:Stimulator = http://identifiers.org/biomodels.sbo/SBO:0000459
+p:Reactant   = http://identifiers.org/biomodels.sbo/SBO:0000010
+p:Product    = http://identifiers.org/biomodels.sbo/SBO:0000011
+p:Promoter   = http://identifiers.org/biomodels.sbo/SBO:0000598
+p:Modifier   = http://identifiers.org/biomodels.sbo/SBO:0000019
