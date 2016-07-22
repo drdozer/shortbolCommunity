@@ -20,6 +20,12 @@ Protein = biopax:Protein
 SmallMolecule = biopax:SmallMolecule
 Complex = biopax:Complex
 
+biopax:DnaRegion     : ComponentDefinitionType
+biopax:RnaRegion     : ComponentDefinitionType
+biopax:Protein       : ComponentDefinitionType
+biopax:SmallMolecule : ComponentDefinitionType
+biopax:Complex       : ComponentDefinitionType
+
 biopax:PhysicalEntity : owl:Class
   owl:subClassOf = ComponentDefinitionType
 
@@ -44,7 +50,7 @@ c:Effector       = <http://identifiers.org/chebi/CHEBI:35224>
 <http://identifiers.org/so/SO:0000057> : <http://identifiers.org/so/SO:0000000>
 <http://identifiers.org/so/SO:0000280> : <http://identifiers.org/so/SO:0000000>
 <http://identifiers.org/so/SO:0000234> : <http://identifiers.org/so/SO:0000000>
-<http://identifiers.org/chebi/CHEBI:35224> : <http://identifiers.org/so/SO:0000000>
+<http://identifiers.org/chebi/CHEBI:35224> : ComponentDefinitionRole
 
 <http://identifiers.org/so/SO:0000000> : owl:Class
   dc:description = "A sequence_feature with an extent greater than zero."
