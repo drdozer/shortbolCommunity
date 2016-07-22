@@ -8,16 +8,20 @@ iupac:RNA = <http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html>
 iupac:Protein = <http://www.chem.qmul.ac.uk/iupac/AminoAcid/>
 opensmiles:SMILES = <http://www.opensmiles.org/opensmiles.html>
 
+iupac:DNA : SequenceEncoding
+iupac:RNA : SequenceEncoding
+iupac:Protein : SequenceEncoding
+opensmiles:SMILES : SequenceEncoding
 
 # ComponentDefinition type
-@prefix biopax <http://www.biopax.org/release/biopax-level3.owl#>
-
 DNA = biopax:DnaRegion
 RNA = biopax:RnaRegion
 Protein = biopax:Protein
 SmallMolecule = biopax:SmallMolecule
 Complex = biopax:Complex
 
+biopax:PhysicalEntity : owl:Class
+  owl:subClassOf = ComponentDefinitionType
 
 # ComponentDefinition role
 
@@ -30,6 +34,25 @@ c:Operator       = <http://identifiers.org/so/SO:0000057>
 c:EngineeredGene = <http://identifiers.org/so/SO:0000280>
 c:mRNA           = <http://identifiers.org/so/SO:0000234>
 c:Effector       = <http://identifiers.org/chebi/CHEBI:35224>
+
+# Listing these individually isn't a long-term solution!
+<http://identifiers.org/so/SO:0000167> : <http://identifiers.org/so/SO:0000000>
+<http://identifiers.org/so/SO:0000139> : <http://identifiers.org/so/SO:0000000>
+<http://identifiers.org/so/SO:0000316> : <http://identifiers.org/so/SO:0000000>
+<http://identifiers.org/so/SO:0000141> : <http://identifiers.org/so/SO:0000000>
+<http://identifiers.org/so/SO:0000704> : <http://identifiers.org/so/SO:0000000>
+<http://identifiers.org/so/SO:0000057> : <http://identifiers.org/so/SO:0000000>
+<http://identifiers.org/so/SO:0000280> : <http://identifiers.org/so/SO:0000000>
+<http://identifiers.org/so/SO:0000234> : <http://identifiers.org/so/SO:0000000>
+<http://identifiers.org/chebi/CHEBI:35224> : <http://identifiers.org/so/SO:0000000>
+
+<http://identifiers.org/so/SO:0000000> : owl:Class
+  dc:description = "A sequence_feature with an extent greater than zero."
+  owl:subClassOf = ComponentDefinitionRole
+
+chebi:_52206 : owl:Class
+  dc:description = "A biological role played by the molecular entity or part thereof within a biochemical context."
+  owl:subClassOf = ComponentDefinitionRole
 
 
 # Templates
@@ -44,6 +67,7 @@ RnaSequence(x) => Sequence
 
 ProteinSequence(x) => Sequence
   encoding = iupac:Protein
+  elements = x
 
 ChemicalStructure(x) => Sequence
   encoding = opensmiles:SMILES
@@ -78,6 +102,9 @@ CDS => DnaComponent
 
 Terminator => DnaComponent
   role = Terminator
+
+Operator => DnaComponent
+  role = Operator
 
 # Common RNA components
 
