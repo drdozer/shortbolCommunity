@@ -98,21 +98,21 @@ ComplexComponent => ComponentDefinition
 # Common DNA components
 
 Promoter => DnaComponent
-  role = Promoter
+  role = c:Promoter
 
 RBS => DnaComponent
-  role = RBS
+  role = c:RBS
 
 CDS => DnaComponent
-  role = CDS
+  role = c:CDS
 
 Terminator => DnaComponent
-  role = Terminator
+  role = c:Terminator
 
 Operator => DnaComponent
-  role = Operator
+  role = c:Operator
 
 # Common RNA components
 
 CDS_RNA => RnaComponent
-  role = CDS
+  role = c:CDS
