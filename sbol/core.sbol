@@ -3,25 +3,27 @@ name = dc:title
 
 Identified : owl:Class
   dc:description = "The base type for SBOL entities."
-  persistentIdentity : owl:restriction
+  identity : owl:propertyRestriction
+    owl:maxCardinality = 1
+  persistentIdentity : owl:propertyRestriction
     owl:subPropertyOf = prov:wasRevisionOf
     owl:minCardinality = 0
     owl:maxCardinality = 1
     owl:allValuesFrom = prov:Entity
-  displayId : owl:restriction
+  displayId : owl:propertyRestriction
     owl:subPropertyOf = dc:identifier
     owl:minCardinality = 0
     owl:maxCardinality = 1
     owl:allValuesFrom = xsd:string
-  version : owl:restriction
+  version : owl:propertyRestriction
     owl:minCardinality = 0
     owl:maxCardinality = 1
     owl:allValuesFrom = xsd:string
-  prov:wasDerivedFrom : owl:restriction
+  prov:wasDerivedFrom : owl:propertyRestriction
     owl:minCardinality = 0
     owl:maxCardinality = 1
     owl:allValuesFrom = prov:Entity
-  name : owl:restriction
+  name : owl:propertyRestriction
     owl:minCardinality = 0
     owl:maxCardinality = 1
     owl:allValuesFrom = xsd:string
