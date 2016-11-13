@@ -1,0 +1,13 @@
+# Model language values
+
+@prefix edam <http://identifiers.org/edam/>
+
+SBML   = edam:format_2585
+CellML = edam:format_3240
+BioPAX = edam:format_3156
+
+
+# Model framework values
+
+Continuous = <http://identifiers.org/biomodels.sbo/SBO:0000062>
+Discrete   = <http://identifiers.org/biomodels.sbo/SBO:0000063>

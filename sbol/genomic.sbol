@@ -20,22 +20,39 @@ Protein = biopax:Protein
 SmallMolecule = biopax:SmallMolecule
 Complex = biopax:Complex
 
+biopax:DnaRegion     : ComponentDefinitionType
+biopax:RnaRegion     : ComponentDefinitionType
+biopax:Protein       : ComponentDefinitionType
+biopax:SmallMolecule : ComponentDefinitionType
+biopax:Complex       : ComponentDefinitionType
+
 biopax:PhysicalEntity : owl:Class
   owl:subClassOf = ComponentDefinitionType
 
 # ComponentDefinition role
 
-Promoter = so:_0000167
-RBS = so:_0000139
-CDS = so:_0000316
-Terminator = so:_0000141
-Gene = so:_0000704
-Operator = so:_0000057
-EngineeredGene = so:_0000280
-mRNA = so:_0000234
-Effector = chebi:_35224
+c:Promoter       = <http://identifiers.org/so/SO:0000167>
+c:RBS            = <http://identifiers.org/so/SO:0000139>
+c:CDS            = <http://identifiers.org/so/SO:0000316>
+c:Terminator     = <http://identifiers.org/so/SO:0000141>
+c:Gene           = <http://identifiers.org/so/SO:0000704>
+c:Operator       = <http://identifiers.org/so/SO:0000057>
+c:EngineeredGene = <http://identifiers.org/so/SO:0000280>
+c:mRNA           = <http://identifiers.org/so/SO:0000234>
+c:Effector       = <http://identifiers.org/chebi/CHEBI:35224>
 
-so:_0000001 : owl:Class
+# Listing these individually isn't a long-term solution!
+<http://identifiers.org/so/SO:0000167> : <http://identifiers.org/so/SO:0000000>
+<http://identifiers.org/so/SO:0000139> : <http://identifiers.org/so/SO:0000000>
+<http://identifiers.org/so/SO:0000316> : <http://identifiers.org/so/SO:0000000>
+<http://identifiers.org/so/SO:0000141> : <http://identifiers.org/so/SO:0000000>
+<http://identifiers.org/so/SO:0000704> : <http://identifiers.org/so/SO:0000000>
+<http://identifiers.org/so/SO:0000057> : <http://identifiers.org/so/SO:0000000>
+<http://identifiers.org/so/SO:0000280> : <http://identifiers.org/so/SO:0000000>
+<http://identifiers.org/so/SO:0000234> : <http://identifiers.org/so/SO:0000000>
+<http://identifiers.org/chebi/CHEBI:35224> : ComponentDefinitionRole
+
+<http://identifiers.org/so/SO:0000000> : owl:Class
   dc:description = "A sequence_feature with an extent greater than zero."
   owl:subClassOf = ComponentDefinitionRole
 
@@ -81,24 +98,24 @@ ComplexComponent => ComponentDefinition
 # Common DNA components
 
 Promoter => DnaComponent
-  role = Promoter
+  role = c:Promoter
 
 RBS => DnaComponent
-  role = RBS
+  role = c:RBS
 
 CDS => DnaComponent
-  role = CDS
+  role = c:CDS
 
 Terminator => DnaComponent
-  role = Terminator
+  role = c:Terminator
 
 Operator => DnaComponent
-  role = Operator
+  role = c:Operator
 
 # Common RNA components
 
 CDS_RNA => RnaComponent
-  role = CDS
+  role = c:CDS
 
 
 # SequenceConstraint restrictions
