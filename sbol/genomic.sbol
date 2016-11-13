@@ -99,3 +99,17 @@ Operator => DnaComponent
 
 CDS_RNA => RnaComponent
   role = CDS
+
+
+# SequenceConstraint restrictions
+
+constraint(sbj, obj, restr) => SequenceConstraint
+  restriction = restr
+  subject = sbj
+  object = obj
+
+precedes(sbj, obj) => constraint(sbj, obj, precedes)
+
+sameOrientationAs(sbj, obj) => constraint(sbj, obj, sameOrientationAs)
+
+oppositeOrientationTo(sbj, obj) => constraint(sbj, obj, oppositeOrientationTo)
