@@ -130,3 +130,13 @@ precedes(sbj, obj) => constraint(sbj, obj, precedes)
 sameOrientationAs(sbj, obj) => constraint(sbj, obj, sameOrientationAs)
 
 oppositeOrientationTo(sbj, obj) => constraint(sbj, obj, oppositeOrientationTo)
+
+# locations
+
+# for example: at(pTetR,      1,   55, inline)
+at(cmpt, start, end, orientation) => SequenceAnnotation
+  component = cmpt
+  location : Range
+    start = start
+    end = end
+    orientation = orientation
