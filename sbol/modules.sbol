@@ -16,3 +16,14 @@ p:Reactant   = http://identifiers.org/biomodels.sbo/SBO:0000010
 p:Product    = http://identifiers.org/biomodels.sbo/SBO:0000011
 p:Promoter   = http://identifiers.org/biomodels.sbo/SBO:0000598
 p:Modifier   = http://identifiers.org/biomodels.sbo/SBO:0000019
+p:Acceptor = <http://identifiers.org/psimi/MI:0843>
+p:Donor = <http://identifiers.org/psimi/MI:0842>
+
+phosphorylates(sbj, obj) => Interaction
+  type = phosphorylation
+  participation : Participation
+      participant = sbj
+      role = p:Donor
+  participation : Participation
+      participant = obj
+      role = p:Acceptor
