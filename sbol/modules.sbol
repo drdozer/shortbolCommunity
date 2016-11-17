@@ -29,13 +29,3 @@ phosphorylates(sbj, obj) => Interaction
   participation : Participation
       participant = obj
       role = p:Acceptor
-
-
-encodes(sbj, obj) => Interaction
-  type = i:GeneticProduction 
-  participation : Participation
-      participant = sbj
-      role = p:Modifier
-  participation : Participation
-      participant = obj
-      role = p:Product
