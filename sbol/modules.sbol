@@ -22,7 +22,7 @@ p:Acceptor   = <http://identifiers.org/psimi/MI:0843>
 p:Donor      = <http://identifiers.org/psimi/MI:0842>
 
 phosphorylates(sbj, obj) => Interaction
-  type = i:Phosphorylation
+  type = phosphorylation
   participation : Participation
       participant = sbj
       role = p:Donor
