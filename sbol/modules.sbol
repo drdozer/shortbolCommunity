@@ -1,4 +1,7 @@
 # Interaction type values
+@prefix i <http://sbols.org/v2/Interaction>
+@prefix p <http://sbols.org/v2/Participation>
+
 
 i:Inhibition          = <http://identifiers.org/biomodels.sbo/SBO:0000169>
 i:Stimulation         = <http://identifiers.org/biomodels.sbo/SBO:0000170>
