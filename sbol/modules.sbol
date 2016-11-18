@@ -32,7 +32,7 @@ phosphorylates(sbj, obj) => sbol:Interaction
       sbol:participant = obj
       sbol:role = Acceptor
 
-encodes(sbj, obj) => sbol:Interaction
+encodesInteraction(sbj, obj) => sbol:Interaction
   sbol:type = GeneticProductionInteraction 
   sbol:participation : sbol:Participation
       sbol:participant = sbj
