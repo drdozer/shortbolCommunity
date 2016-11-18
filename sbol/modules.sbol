@@ -6,6 +6,12 @@
 # Interaction type values
 
 Phosphorylation     = <http://identifiers.org/biomodels.sbo/SBO:0000216>
+Inhibition          = <http://identifiers.org/biomodels.sbo/SBO:0000169>
+Stimulation         = <http://identifiers.org/biomodels.sbo/SBO:0000170>
+BiochemicalReaction = <http://identifiers.org/biomodels.sbo/SBO:0000176>
+NonCovalentBinding  = <http://identifiers.org/biomodels.sbo/SBO:0000177>
+Degradation         = <http://identifiers.org/biomodels.sbo/SBO:0000179>
+GeneticProductionInteraction   = <http://identifiers.org/biomodels.sbo/SBO:0000589>
 
 # Participation role values
 Inhibitor  = <http://identifiers.org/biomodels.sbo/SBO:0000020>
