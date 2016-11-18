@@ -6,21 +6,8 @@
 # Interaction type values
 
 i:Phosphorylation     = <http://identifiers.org/biomodels.sbo/SBO:0000216>
-i:Inhibition          = <http://identifiers.org/biomodels.sbo/SBO:0000169>
-i:Stimulation         = <http://identifiers.org/biomodels.sbo/SBO:0000170>
-i:BiochemicalReaction = <http://identifiers.org/biomodels.sbo/SBO:0000176>
-i:NonCovalentBinding  = <http://identifiers.org/biomodels.sbo/SBO:0000177>
-i:Degradation         = <http://identifiers.org/biomodels.sbo/SBO:0000179>
-i:GeneticProduction   = <http://identifiers.org/biomodels.sbo/SBO:0000589>
 
 # Participation role values
-p:Inhibitor  = <http://identifiers.org/biomodels.sbo/SBO:0000020>
-p:Stimulator = <http://identifiers.org/biomodels.sbo/SBO:0000459>
-p:Reactant   = <http://identifiers.org/biomodels.sbo/SBO:0000010>
-p:Product    = <http://identifiers.org/biomodels.sbo/SBO:0000011>
-p:Promoter   = <http://identifiers.org/biomodels.sbo/SBO:0000598>
-p:Modifier   = <http://identifiers.org/biomodels.sbo/SBO:0000019>
-p:Acceptor   = <http://identifiers.org/psimi/MI:0843>
 p:Acceptor   = <http://identifiers.org/psimi/MI:0843>
 p:Donor      = <http://identifiers.org/psimi/MI:0842>
 
@@ -32,13 +19,3 @@ phosphorylates(sbj, obj) => sbol:Interaction
   sbol:participation : sbol:Participation
       sbol:participant = obj
       sbol:role = p:Acceptor
-
-encodes(sbj, obj) => sbol:Interaction
-  sbol:type = i:GeneticProduction 
-  sbol:participation : sbol:Participation
-      sbol:participant = sbj
-      sbol:role = p:Modifier
-  sbol:participation : sbol:Participation
-      sbol:participant = obj
-      sbol:role = p:Product
-
