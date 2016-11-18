@@ -33,7 +33,7 @@ phosphorylates(sbj, obj) => sbol:Interaction
       sbol:role = Acceptor
 
 encodes(sbj, obj) => sbol:Interaction
-  sbol:type = GeneticProduction 
+  sbol:type = <http://identifiers.org/biomodels.sbo/SBO:0000589> 
   sbol:participation : sbol:Participation
       sbol:participant = sbj
       sbol:role = Modifier
