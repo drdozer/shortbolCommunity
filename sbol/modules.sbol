@@ -8,6 +8,12 @@
 Phosphorylation     = <http://identifiers.org/biomodels.sbo/SBO:0000216>
 
 # Participation role values
+Inhibitor  = <http://identifiers.org/biomodels.sbo/SBO:0000020>
+Stimulator = <http://identifiers.org/biomodels.sbo/SBO:0000459>
+Reactant   = <http://identifiers.org/biomodels.sbo/SBO:0000010>
+Product    = <http://identifiers.org/biomodels.sbo/SBO:0000011>
+Promoter   = <http://identifiers.org/biomodels.sbo/SBO:0000598>
+Modifier   = <http://identifiers.org/biomodels.sbo/SBO:0000019>
 Acceptor   = <http://identifiers.org/psimi/MI:0843>
 Donor      = <http://identifiers.org/psimi/MI:0842>
 
