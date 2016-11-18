@@ -5,17 +5,17 @@
 
 # Interaction type values
 
-i:Phosphorylation     = <http://identifiers.org/biomodels.sbo/SBO:0000216>
+Phosphorylation     = <http://identifiers.org/biomodels.sbo/SBO:0000216>
 
 # Participation role values
-p:Acceptor   = <http://identifiers.org/psimi/MI:0843>
-p:Donor      = <http://identifiers.org/psimi/MI:0842>
+Acceptor   = <http://identifiers.org/psimi/MI:0843>
+Donor      = <http://identifiers.org/psimi/MI:0842>
 
 phosphorylates(sbj, obj) => sbol:Interaction
-  sbol:type = i:Phosphorylation
+  sbol:type = Phosphorylation
   sbol:participation : sbol:Participation
       sbol:participant = sbj
-      sbol:role = p:Donor
+      sbol:role = Donor
   sbol:participation : sbol:Participation
       sbol:participant = obj
-      sbol:role = p:Acceptor
+      sbol:role = Acceptor
