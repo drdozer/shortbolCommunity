@@ -1,3 +1,5 @@
+@prefix sbol <http://sbols.org/v2#>
+
 InteractionPhosphorylation     = <http://identifiers.org/biomodels.sbo/SBO:0000216>
 
 ParticipationAcceptor   = <http://identifiers.org/psimi/MI:0843>
