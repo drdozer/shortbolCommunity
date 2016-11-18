@@ -11,7 +11,7 @@ Stimulation         = <http://identifiers.org/biomodels.sbo/SBO:0000170>
 BiochemicalReaction = <http://identifiers.org/biomodels.sbo/SBO:0000176>
 NonCovalentBinding  = <http://identifiers.org/biomodels.sbo/SBO:0000177>
 Degradation         = <http://identifiers.org/biomodels.sbo/SBO:0000179>
-GeneticProduction   = <http://identifiers.org/biomodels.sbo/SBO:0000589>
+GeneticProductionInteraction   = <http://identifiers.org/biomodels.sbo/SBO:0000589>
 
 # Participation role values
 Inhibitor  = <http://identifiers.org/biomodels.sbo/SBO:0000020>
@@ -33,7 +33,7 @@ phosphorylates(sbj, obj) => sbol:Interaction
       sbol:role = Acceptor
 
 encodes(sbj, obj) => sbol:Interaction
-  sbol:type = <http://identifiers.org/biomodels.sbo/SBO:0000589> 
+  sbol:type = GeneticProductionInteraction 
   sbol:participation : sbol:Participation
       sbol:participant = sbj
       sbol:role = Modifier
