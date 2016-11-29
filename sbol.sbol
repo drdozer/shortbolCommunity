@@ -3,8 +3,8 @@
 @import <xsd>
 @import <rdf>
 @import <owl>
-@import <prov>
 @import <dc>
+@import <prov>
 
 @import <chebi>
 @import <so>
