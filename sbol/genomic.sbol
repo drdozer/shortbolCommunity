@@ -83,41 +83,41 @@ ChemicalStructure(x) => Sequence
 # DNA/RNA/Protein
 
 DnaComponent => ComponentDefinition
-   type = DNA
+   type = sbol_cdType:DNA
 
 RnaComponent => ComponentDefinition
-   type = RNA
+   type = sbol_cdType:RNA
 
 ProteinComponent => ComponentDefinition
-  type = Protein
+  type = sbol_cdType:Protein
 
 SmallMoleculeComponent => ComponentDefinition
-  type = SmallMolecule
+  type = sbol_cdType:SmallMolecule
 
 ComplexComponent => ComponentDefinition
-  type = Complex
+  type = sbol_cdType:Complex
 
 # Common DNA components
 
 Promoter => DnaComponent
-  role = c:Promoter
+  role = sbol_cdRole:Promoter
 
 RBS => DnaComponent
-  role = c:RBS
+  role = sbol_cdRole:RBS
 
 CDS => DnaComponent
-  role = c:CDS
+  role = sbol_cdRole:CDS
 
 Terminator => DnaComponent
-  role = c:Terminator
+  role = sbol_cdRole:Terminator
 
 Operator => DnaComponent
-  role = c:Operator
+  role = sbol_cdRole:Operator
 
 # Common RNA components
 
 CDS_RNA => RnaComponent
-  role = c:CDS
+  role = sbol_cdRole:CDS
 
 
 # SequenceConstraint restrictions
