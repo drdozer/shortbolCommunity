@@ -145,22 +145,22 @@ at(cmpt, start, end, orientation) => SequenceAnnotation
 
 
 # MapsTo infix constructors
-replacedBy(inModule, inSubModule) = MapsTo
+replacedBy(inModule, inSubModule) => MapsTo
   refinement = useRemote
   local = inModule
   remote = inSubModule
 
-replaces(inModule, inSubModule) = MapsTo
+replaces(inModule, inSubModule) => MapsTo
   refinement = useLocal
   local = inModule
   remote = inSubModule
 
-isIdenticalTo(inModule, inSubModule) = MapsTo
+isIdenticalTo(inModule, inSubModule) => MapsTo
   refinement = verifyIdentical
   local = inModule
   remote = inSubModule
 
-mergedWith(inModule, inSubModule) = MapsTo
+mergedWith(inModule, inSubModule) => MapsTo
   refinement = merge
   local = inModule
   remote = inSubModule
