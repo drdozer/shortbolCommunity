@@ -140,3 +140,25 @@ at(cmpt, start, end, orientation) => SequenceAnnotation
     start = start
     end = end
     orientation = orientation
+
+
+# MapsTo infix constructors
+replacedBy(inModule, inSubModule) = MapsTo
+  refinement = useRemote
+  local = inModule
+  remote = inSubModule
+
+replaces(inModule, inSubModule) = MapsTo
+  refinement = useLocal
+  local = inModule
+  remote = inSubModule
+
+isIdenticalTo(inModule, inSubModule) = MapsTo
+  refinement = verifyIdentical
+  local = inModule
+  remote = inSubModule
+
+mergedWith(inModule, inSubModule) = MapsTo
+  refinement = merge
+  local = inModule
+  remote = inSubModule
