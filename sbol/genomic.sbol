@@ -1,3 +1,5 @@
+@prefix sbol_cdType <http://sbols.org/v2/componentDefinition_type>
+@prefix sbol_cdRole <http://sbols.org/v2/componentDefinition_role>
 
 ############### Generic Components ##################
 
@@ -14,11 +16,11 @@ iupac:Protein : SequenceEncoding
 opensmiles:SMILES : SequenceEncoding
 
 # ComponentDefinition type
-DNA = biopax:DnaRegion
-RNA = biopax:RnaRegion
-Protein = biopax:Protein
-SmallMolecule = biopax:SmallMolecule
-Complex = biopax:Complex
+sbol_cdType:DNA = biopax:DnaRegion
+sbol_cdType:RNA = biopax:RnaRegion
+sbol_cdType:Protein = biopax:Protein
+sbol_cdType:SmallMolecule = biopax:SmallMolecule
+sbol_cdType:Complex = biopax:Complex
 
 biopax:DnaRegion     : ComponentDefinitionType
 biopax:RnaRegion     : ComponentDefinitionType
@@ -31,15 +33,15 @@ biopax:PhysicalEntity : owl:Class
 
 # ComponentDefinition role
 
-c:Promoter       = <http://identifiers.org/so/SO:0000167>
-c:RBS            = <http://identifiers.org/so/SO:0000139>
-c:CDS            = <http://identifiers.org/so/SO:0000316>
-c:Terminator     = <http://identifiers.org/so/SO:0000141>
-c:Gene           = <http://identifiers.org/so/SO:0000704>
-c:Operator       = <http://identifiers.org/so/SO:0000057>
-c:EngineeredGene = <http://identifiers.org/so/SO:0000280>
-c:mRNA           = <http://identifiers.org/so/SO:0000234>
-c:Effector       = <http://identifiers.org/chebi/CHEBI:35224>
+sbol_cdRole:Promoter       = <http://identifiers.org/so/SO:0000167>
+sbol_cdRole:RBS            = <http://identifiers.org/so/SO:0000139>
+sbol_cdRole:CDS            = <http://identifiers.org/so/SO:0000316>
+sbol_cdRole:Terminator     = <http://identifiers.org/so/SO:0000141>
+sbol_cdRole:Gene           = <http://identifiers.org/so/SO:0000704>
+sbol_cdRole:Operator       = <http://identifiers.org/so/SO:0000057>
+sbol_cdRole:EngineeredGene = <http://identifiers.org/so/SO:0000280>
+sbol_cdRole:mRNA           = <http://identifiers.org/so/SO:0000234>
+sbol_cdRole:Effector       = <http://identifiers.org/chebi/CHEBI:35224>
 
 # Listing these individually isn't a long-term solution!
 <http://identifiers.org/so/SO:0000167> : <http://identifiers.org/so/SO:0000000>
