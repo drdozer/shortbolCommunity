@@ -94,6 +94,9 @@ ProteinComponent => ComponentDefinition
 SmallMoleculeComponent => ComponentDefinition
   type = sbol_cdType:SmallMolecule
 
+SmallMolecule => ComponentDefinition
+  type = sbol_cdType:SmallMolecule
+
 ComplexComponent => ComponentDefinition
   type = sbol_cdType:Complex
 
