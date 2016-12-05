@@ -103,6 +103,8 @@ SmallMolecule => ComponentDefinition
 ComplexComponent => ComponentDefinition
   type = sbol_cdType:Complex
 
+Complex => ComponentDefinition
+  type = sbol_cdType:Complex
 # Common DNA components
 
 Promoter => DnaComponent
