@@ -91,7 +91,13 @@ Dna => ComponentDefinition
 RnaComponent => ComponentDefinition
    type = sbol_cdType:RNA
 
+Rna => ComponentDefinition
+   type = sbol_cdType:RNA
+
 ProteinComponent => ComponentDefinition
+  type = sbol_cdType:Protein
+
+Protein => ComponentDefinition
   type = sbol_cdType:Protein
 
 SmallMoleculeComponent => ComponentDefinition
