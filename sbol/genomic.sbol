@@ -85,6 +85,9 @@ ChemicalStructure(x) => Sequence
 DnaComponent => ComponentDefinition
    type = sbol_cdType:DNA
 
+Dna => ComponentDefinition
+   type = sbol_cdType:DNA
+
 RnaComponent => ComponentDefinition
    type = sbol_cdType:RNA
 
