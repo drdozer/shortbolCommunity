@@ -104,6 +104,9 @@ SequenceAnnotation : owl:Class
 LocationOrientation : owl:Class
   owl:oneOf : rdf:list(inline, reverseComplement)
 
+inline : LocationOrientation
+reverseComplement : LocationOrientation
+
 Location : owl:Class
   dc:description = "A spatial location within a ComponentDefinition, usually by reference to the coordinate system defined by its associated Sequence."
   owl:subClassOf = Identified
