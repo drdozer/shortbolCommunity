@@ -153,10 +153,9 @@ oppositeOrientationTo(sbj, obj) => constraint(sbj, obj, oppositeOrientationTo)
 at(cmpt, start, end, orientation) => SequenceAnnotation
   component = cmpt
   location : Range
-    start = start
-    end = end
-    orientation = orientation
-
+    sbol:start = start
+    sbol:end = end
+    sbol:orientation = orientation
 
 # MapsTo infix constructors
 replacedBy(inModule, inSubModule) => MapsTo
